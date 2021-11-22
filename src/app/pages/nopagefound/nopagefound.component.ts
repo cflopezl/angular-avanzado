@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './nopagefound.component.html',
   styleUrls: [ './nopagefound.component.css' ]
 })
-export class NopagefoundComponent  {
+export class NopagefoundComponent {
 
   year = new Date().getFullYear();
 
