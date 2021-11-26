@@ -12,7 +12,10 @@
             <!-- Breadcrumbs -->
             <app-breadcrumbs></app-breadcrumbs>
 
-            <!-- Mi sistema de rutas -->
+            <!-- Mi sistema de rutas hijas-->
+            <!-- las child routes necesitan un outlet independiente, 
+                porque cuando una ruta se convierte en "ruta madre", 
+                necesita ofrecer a sus rutas hijas un punto al que engancharse, y eso es el outlet.-->            
             <router-outlet></router-outlet>
             <!--<div class="row">
                 <div class="col-12">
