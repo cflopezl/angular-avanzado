@@ -5,6 +5,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
+import { PromesaComponent } from './promesa/promesa.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 /*las child routes necesitan un outlet independiente, 
 porque cuando una ruta se convierte en "ruta madre", 
@@ -15,10 +17,12 @@ const routes: Routes = [
       path: 'main',  
       component: PagesComponent,
       children: [ 
-        { path: 'dashboard', component: DashboardComponent },
-        { path: 'progress', component: ProgressComponent },
-        { path: 'grafica1', component: Grafica1Component },
-        { path: 'account-settings', component: AccountSettingsComponent },
+        { path: 'dashboard', data:{ titulo: 'Dashboard'}, component: DashboardComponent },
+        { path: 'progress', data:{ titulo: 'ProgressBar'}, component: ProgressComponent },
+        { path: 'grafica1', data:{ titulo: 'Gráfica #1'}, component: Grafica1Component },
+        { path: 'account-settings', data:{ titulo: 'Tema'}, component: AccountSettingsComponent },
+        { path: 'promesa', data:{ titulo: 'Promesa'}, component: PromesaComponent },
+        { path: 'rxjs', data:{ titulo: 'RxJs'}, component: RxjsComponent },
         { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
       ]
     },

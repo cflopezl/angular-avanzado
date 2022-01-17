@@ -23,6 +23,14 @@ export class SideBarService {
             title: 'Gráfica 1',
             url: 'grafica1'
           },
+          {
+            title: 'Promesa',
+            url: 'promesa'
+          },
+          {
+            title: 'RxJS',
+            url: 'rxjs'
+          },
         ]
       }
     ]

@@ -27,7 +27,10 @@
                         </span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li *ngFor="let subOption of item.options"><a [routerLink]="subOption.url">{{subOption.title}} </a></li>
+                        <li *ngFor="let subOption of item.options">
+                            <a [routerLink]="subOption.url"
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]= "{ exact:true }">{{subOption.title}} </a></li>
                     </ul>
                 </li>
                 
