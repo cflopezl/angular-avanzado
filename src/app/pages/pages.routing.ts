@@ -5,6 +5,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
+import { PerfilComponent } from './perfil/perfil.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PromesaComponent } from './promesa/promesa.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
         { path: 'account-settings', data:{ titulo: 'Tema'}, component: AccountSettingsComponent },
         { path: 'promesa', data:{ titulo: 'Promesa'}, component: PromesaComponent },
         { path: 'rxjs', data:{ titulo: 'RxJs'}, component: RxjsComponent },
+        { path: 'perfil', data:{ titulo: 'Perfil de Usuario'}, component: PerfilComponent },
         { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
       ]
     },
