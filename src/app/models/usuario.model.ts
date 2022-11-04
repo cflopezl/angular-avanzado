@@ -16,12 +16,13 @@ export class Usuario {
 
 
     get imagenUrl() {
-        
-        if( this.google )
-            return this.img;
-
         const imagen = this.img ? this.img : 'no-image';
+        if( this.img && this.img.includes('https') ){
+            return this.img;
+        }
+        
         return `${base_url}/uploads/usuarios/${imagen}`;
+
     }
 
 }
