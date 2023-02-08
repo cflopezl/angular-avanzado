@@ -11,6 +11,9 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PromesaComponent } from './promesa/promesa.component';
 import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
+import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
+import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { MedicoComponent } from './mantenimientos/medicos/medico.component';
 
 /*las child routes necesitan un outlet independiente, 
 porque cuando una ruta se convierte en "ruta madre", 
@@ -32,7 +35,10 @@ const routes: Routes = [
         { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
         
         // Mantenimientos
-        { path: 'usuarios', data:{ titulo: 'Usuario de Aplicación'}, component: UsuariosComponent },
+        { path: 'usuarios', data:{ titulo: 'Mantenimiento de Usuarios'}, component: UsuariosComponent },
+        { path: 'hospitales', data:{ titulo: 'Mantenimiento de Hospitales'}, component: HospitalesComponent },
+        { path: 'medicos', data:{ titulo: 'Mantenimiento de Médicos'}, component: MedicosComponent },
+        { path: 'medico/:id', data:{ titulo: 'Mantenimiento de Médicos'}, component: MedicoComponent },
       ]
     },
   ];
